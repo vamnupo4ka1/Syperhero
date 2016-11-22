@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Заказики</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript" src="js-form.js"></script>
+     <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+  
+  <style>
+#Site {
+  width: 3em;
+}
+</style>
+<script> 
+function checkCurr(d) { 
+if(window.event) 
+{ 
+if(event.keyCode == 37 || event.keyCode == 39) return; 
+} 
+d.value = d.value.replace(/\D/g,''); 
+} 
+</script> 
+
+  
+</head
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+   <div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="Главная.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">На главную</a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">Информация <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="page1.html">Суперсдачинсессин</a>
+      <a href="page2.html">Мегауниверсалучин</a>
+      <a href="page3.html">Арбайтен</a>
+    </div>
+  </li>
+ </ul>
+  
+<div class="container-fluid text-center" style="margin-top:50px">
+  <div class="row content">
+    
+    <div class="col-sm-12 text-center">
+      <h1>Заказики</h1>
+      
+    </div>
+  <div>
+  
+  
+<div id="cor5" class="right-sidebarForm" >
+<h4> Закизик Вашего супергероя</h4>
+<hr>
+<div align="center" id='loadBar'></div>
+<form action="#" method="post" id="cForm2">
+   <div class="input" id="cor5">
+   <label>Ваше имя:</label> <input value="" id="posName" type="text" />  <label>Ваш возраст:</label> <input value="" id="laba_stp_age" type="text" onkeyup="checkCurr(this)"/>
+   </div>
+   <p></p>
+   <label>Ваш email:</label>
+   <div class="input" id="cor5">
+   <input value="" id="posEmail" type="text" />
+   </div>
+   <p></p>
+   <label>Ваше сообщение:</label>
+   <div class="textarea" id="cor5"><textarea id="posText" rows="5"></textarea></div>
+   <p></p>
+<button type="button" id="send">Отправить</button>
+</form></div>
+
+  
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
+
